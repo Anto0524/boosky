@@ -1,0 +1,135 @@
+*{
+    padding: 0%;
+    margin:0%;
+    font-weight: bolder;
+}
+#navbar{
+    background-color: red;
+    padding: 2%;
+    animation:10s nav infinite;
+}
+@keyframes nav{
+    20%{color:rgb(1, 1, 27)}
+    40%{background-color:rgb(8, 159, 76)}
+    60%{color:rgb(214, 130, 34)}
+    80%{color:rgba(246, 245, 248, 0.863)}
+    100%{background-color:rgb(54, 37, 232)}
+
+}
+.container{
+    padding: 10px;
+}
+.book_container{
+    padding: 15px;
+    width:25%;
+    background-color: rgb(227, 217, 217);
+    border-radius: 5%;
+    margin:30px;
+    display: inline-block;
+    vertical-align: top;
+ 
+
+}
+.book_container h2{
+    color: red;
+
+}
+.book_container button{
+    color: black;
+    background-color: red;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+}
+#add_popup{
+    background-color: red;
+    color: rgb(7, 7, 7);
+    border-radius: 100%;
+    font-weight: bolder;
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 30pt;
+    position: fixed;
+    right:30px;
+    bottom: 30px;
+    border:none;
+}
+.popup_overlay{
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0%;
+    left:0%;
+    z-index: 1;
+    display: none;
+    animation:10s nav1 infinite;
+
+}
+@keyframes nav1{
+    20%{background-color:rgb(1, 1, 27)}
+    40%{background-color:rgb(8, 159, 76)}
+    60%{background-color:rgb(214, 130, 34)}
+    80%{background-color:rgba(246, 245, 248, 0.863)}
+    100%{background-color:rgb(54, 37, 232)}
+
+}
+.popup_box{
+    background-color: red;
+    width:40%;
+    padding: 45px;
+    border-radius: 10px;
+    position: absolute;
+    top:20%;
+    left:30%;
+    z-index:2;
+    display: none;
+}
+.popup_box input{
+    background: transparent;
+    border:none;
+    width:100%;
+    margin:5px;
+    padding:5px;
+    font-size: 20px;
+    border-bottom: solid black 2px;
+
+}
+.popup_box textarea{
+    background: transparent;
+    border:none;
+    width:100%;
+    margin:5px;
+    padding:5px;
+    font-size: 20px;
+    border: solid black 2px;
+
+}
+.popup_box input::placeholder{
+    color: black;
+
+}
+.popup_box textarea::placeholder{
+    color: black;
+
+}
+.popup_box button{
+    background-color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: aliceblue;
+    margin:5px;
+    border: none;
+    border-radius: 5px;
+}
+.popup_box input:focus{
+    outline: none;
+}
+.popup_box textarea:focus{
+    outline: none;
+}
